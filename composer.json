@@ -1,0 +1,20 @@
+{
+    "name": "parse/hook",
+    "autoload": {
+        "psr-4": {
+            "Parse\\Hook\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Parse\\Hook\\Providers\\HookServiceProvider",
+                "Parse\\Hook\\Providers\\EventBladeServiceProvider",
+                "Parse\\Hook\\Providers\\EventServiceProvider"
+            ]
+        }
+    }
+}
